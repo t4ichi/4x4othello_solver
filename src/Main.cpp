@@ -214,8 +214,6 @@ void init(int& black, int& white,int& col,vector<int>& mine,vector<int>& opp){
     board_update(black, white, mine, opp);
 }
 
-
-
 //自分の手番
 void mine_move(int cell,int& black,int& white,int& col,vector<int>& mine,vector<int>& opp){
     cout << "-----BLACK-----" << "\n";
@@ -263,6 +261,7 @@ void opp_move(int& black,int& white,int& col,vector<int>& mine,vector<int>& opp)
 void Main() {
     //背景の色
     Scene::SetBackground(Color( 36, 153, 114 ));
+    
     //盤面の左上からの位置
     const Vec2 BoardOffset{ 40, 60 };
     
